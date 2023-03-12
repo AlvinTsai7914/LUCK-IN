@@ -3,7 +3,7 @@ $(document).ready(function() {
     
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
-    var slidesPerPage = 3; //globaly define number of elements per page
+    var slidesPerPage = 4; //globaly define number of elements per page
     var syncedSecondary = true;
   
         sync1.owlCarousel({
@@ -246,7 +246,7 @@ $(document).ready(function() {
     
   var sync7 = $("#sync7");
   var sync8 = $("#sync8");
-  var slidesPerPage = 4; //globaly define number of elements per page
+  var slidesPerPage = 3; //globaly define number of elements per page
   var syncedSecondary = true;
 
       sync7.owlCarousel({
@@ -410,7 +410,7 @@ $(document).ready(function() {
     
   var sync11 = $("#sync11");
   var sync12 = $("#sync12");
-  var slidesPerPage = 4; //globaly define number of elements per page
+  var slidesPerPage = 3; //globaly define number of elements per page
   var syncedSecondary = true;
 
       sync11.owlCarousel({
