@@ -110,7 +110,8 @@ footer .copyrights-text {
 
 /* 首頁 驗證與認證+關於福昌內文 */
 .certified p,
-.about p {
+.about p,
+.news p {
   font-size: 20px;
 }
 
@@ -264,3 +265,4 @@ footer .copyrights-text {
 .product-service .wt-product-text p {
   font-size: 18px;
 }
+/*# sourceMappingURL=style-custom.css.map */

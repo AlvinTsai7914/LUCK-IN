@@ -27,22 +27,15 @@ header {
         }
     }
 }
-// @media (max-width: 1200px) {
-//     .header-style-11 .header-middle-wraper .container {
-//         max-width: 100%;
-//     }
-
-//     .header-style-11 .header-info-wraper .header-info>ul li .wt-tilte {
-//         font-size: 18px;
-//     }
-
-//     .header-style-11 .header-info-wraper .header-info>ul li p {
-//         font-size: 14px;
-//     }
-// }
 
 .header-style-11 .logo-header {
     width: 280px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-style-11 .header-middle-wraper .logo-header {
+        max-width: 220px;
+    }
 }
 
 
@@ -134,8 +127,14 @@ footer {
 
 /* 首頁 驗證與認證+關於福昌內文 */
 .certified p,
-.about p {
+.about p,
+.news p {
     font-size: 20px;
+}
+
+// 首頁 驗證語認證
+.owl-carousel .owl-dots .owl-dot span {
+    background: #a0b3c0;
 }
 
 /* 首頁 關於福昌圖片 */
@@ -166,10 +165,19 @@ footer {
     .about-max-11 {
         width: 100%;
     }
+    a {
+        font-size: 20px;
+    }
 }
 
 /* 首頁 聯絡我們 */ 
 .contact {
+    p {
+        margin-bottom: 8px;
+    }
+    p, h4 {
+        text-align: start;
+    }
     .header-info-wraper {
         position: relative;
         // top: -100%;
@@ -220,38 +228,21 @@ footer {
             flex-shrink: 0;
         }
     }
-    // .info-wrapper {
-    //     width: 100%;
-    //     .icon {
-    //         width: 40px;
-    //         height: 40px;
-    //         span {
-    //             display: flex;
-    //             align-items: center;
-    //             justify-content: center;
-    //             width: 100%;
-    //             height: 100%;
-    //             border-radius: 50%;
-    //             background-color: #1c63b8;
-    //             i {
-    //                 font-size: 20px;
-    //                 color: white;
-    //             }
-    //         }
-    //     }
-    // }
-    
+    .content-box {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
     .img_box {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: tramslate(-50%, -50%);
         width: 100%;
         &::before {
             content: "";
             position: relative;
             display: block;
-            padding-bottom: 41.666%;
+            padding-bottom: 54%;
         }
         img {
             position: absolute;
@@ -261,7 +252,33 @@ footer {
             width: 100%;
         }
     }
-    
+    @media all and (max-width: 767.8px) {
+        .content-box {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            z-index: 1;
+        }
+        .img_box {
+            display: none;
+            width: 100%;
+            &::before {
+                content: "";
+                position: relative;
+                display: block;
+                padding-bottom: 54%;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+        }
+    }
 }
 
 // 內容頁 標題
@@ -281,6 +298,7 @@ footer {
 .service-border-box.service-image-box {
     height: 100%;
 }
+
 .wt-box.service-box-1 {
     height: 100%;
 }
@@ -302,5 +320,22 @@ footer {
     }
     .wt-product-text p {
         font-size: 18px;
+    }
+}
+
+// 電子型錄
+.catalog {
+    .wt-separator-two-part-left .section-head {
+        margin-bottom: 0;
+    }
+    @media all and (max-width: 768px) {
+        h3.s-title-one {
+            font-size: 28px;
+        }
+    }
+    @media all and (max-width: 575.8px) {
+        h3.s-title-one {
+            font-size: 24px;
+        }
     }
 }
